@@ -1,0 +1,405 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:title" content="必勝歡聚餐｜雙大披薩組合">
+<meta property="og:description" content="雙大披薩、烤雞與飲料組合，限時特惠。">
+<meta property="og:image" content="{{ site.github.url }}/pizza-hut-promo.png">
+<meta property="og:url" content="{{ site.github.url }}/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.github.url }}/pizza-hut-promo.png">
+
+<script>
+/* =========================================================
+   ★★★★★ 所有要修改的內容都在這裡 ★★★★★
+   之後你只需要改這一區，不用動下面的程式。
+   ========================================================= */
+
+const CONFIG = {
+  pageTitle: "必勝歡聚餐｜外帶組合資訊",
+  heroImage: "pizza-hut-promo.png",
+  heroAlt: "必勝歡聚餐披薩與烤雞宣傳圖",
+  eyebrow: "PIZZA HUT・歡聚時光",
+  title: "必勝歡聚餐",
+  subtitle: "雙大披薩・烤雞・飲料，一起分享美味",
+  rewardLabel: "活動優惠",
+  rewardText: "組合參考：13吋大披薩 2 個＋烤雞 8 塊＋1.25L 飲料",
+  timeLabel: "活動日期",
+  timeText: "2026/10/24-2026/10/27",
+  claimTag: "雙倍披薩・歡聚分享",
+  claimTitleLine1: "雙大披薩",
+  claimTitleLine2: "烤雞飲料一起享",
+  claimDesc: "兩個 13 吋披薩、烤雞與飲料。",
+  claimButtonText: "聯絡活動諮詢",
+  claimSafeText: "活動示意頁・必勝客官方網站",
+  lineLink: "https://line-router-v2.vercel.app/api/r/F7ANoV4-nGjOfm_X-2Yvvj5",
+  footerText: "※ 本頁為官方活動示意頁，優惠內容請聯絡必勝客官方客服獲取。"
+};
+</script>
+
+<title></title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  min-height:100vh;
+  color:#fff;
+  font-family:
+    "Noto Sans TC",
+    "Microsoft JhengHei",
+    "PingFang TC",
+    Arial,
+    sans-serif;
+  background:#390909;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 2%, rgba(255,214,133,.24), transparent 24%),
+    radial-gradient(circle at 92% 24%, rgba(255,214,133,.14), transparent 28%),
+    radial-gradient(circle at 10% 88%, rgba(255,205,0,.07), transparent 24%),
+    linear-gradient(145deg,#350606 0%, #a20e14 48%, #490809 100%);
+}
+
+.bg-grid{
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  opacity:.10;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:40px 40px;
+  mask-image:linear-gradient(to bottom, black, rgba(0,0,0,.15));
+}
+
+.glow{
+  position:fixed;
+  border-radius:50%;
+  filter:blur(88px);
+  pointer-events:none;
+  z-index:0;
+}
+.glow.one{
+  width:260px;height:260px;top:-110px;right:-70px;
+  background:rgba(255,44,66,.20);
+}
+.glow.two{
+  width:230px;height:230px;bottom:90px;left:-90px;
+  background:rgba(255,30,52,.14);
+}
+
+.page{
+  width:min(100%, 760px);
+  margin:0 auto;
+  padding:18px 16px 40px;
+  position:relative;
+  z-index:1;
+}
+
+.hero{
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid rgba(255,222,150,.65);
+  background:#620c12;
+  box-shadow:
+    0 18px 48px rgba(0,0,0,.50),
+    0 0 28px rgba(255,200,116,.23);
+}
+.hero img{
+  display:block;
+  width:100%;
+  height:auto;
+  /* 依圖片原始比例顯示：橫圖、直圖都不裁切 */
+  object-fit:contain;
+}
+
+.intro{
+  margin-top:22px;
+  text-align:center;
+  padding:0 8px;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(255,204,0,.15);
+  border:1px solid rgba(255,211,0,.6);
+  color:#ffdf48;
+  font-size:11px;
+  font-weight:1000;
+  letter-spacing:.16em;
+}
+.eyebrow::before{
+  content:"";
+  width:7px;height:7px;border-radius:50%;
+  background:#ffcc00;
+  box-shadow:0 0 10px #ffcc00;
+}
+
+h1{
+  margin:14px 0 8px;
+  font-size:36px;
+  line-height:1.12;
+  font-weight:1000;
+  letter-spacing:-.03em;
+  text-shadow:0 0 18px rgba(255,45,68,.16);
+}
+.subtitle{
+  width:min(100%, 600px);
+  margin:0 auto;
+  color:#ffe2d5;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.info{
+  margin-top:24px;
+  padding:18px;
+  border-radius:20px;
+  background:linear-gradient(145deg, rgba(114,14,20,.97), rgba(51,8,10,.97));
+  border:1px solid rgba(255,255,255,.07);
+  box-shadow:0 15px 38px rgba(0,0,0,.32);
+}
+.row{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:13px 14px;
+  border-radius:14px;
+  background:rgba(255,255,255,.035);
+}
+.row + .row{margin-top:10px}
+.label{
+  flex:0 0 84px;
+  color:#ffdc45;
+  font-size:13px;
+  font-weight:900;
+}
+.value{
+  flex:1;
+  color:#f5f7fa;
+  font-size:14px;
+  line-height:1.56;
+  word-break:break-word;
+}
+
+/* ===== 領取區塊：改成參考圖那種字體視覺 ===== */
+.claim-panel{
+  margin-top:22px;
+  padding:22px;
+  border-radius:26px;
+  background:linear-gradient(145deg, #b31221, #65070f);
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.02) inset,
+    0 20px 46px rgba(0,0,0,.42);
+}
+.claim-tag{
+  color:#ffe44f;
+  font-size:13px;
+  font-weight:1000;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.claim-title{
+  margin-top:12px;
+  font-weight:1000;
+  line-height:1.10;
+  letter-spacing:-.03em;
+  color:#fff;
+}
+.claim-title .line1{
+  display:block;
+  font-size:40px;
+}
+.claim-title .line2{
+  display:block;
+  margin-top:4px;
+  font-size:40px;
+}
+.claim-desc{
+  margin-top:14px;
+  color:#ffe1d6;
+  font-size:14px;
+  line-height:1.75;
+  max-width:560px;
+}
+.claim-button-wrap{
+  margin-top:22px;
+}
+.claim-button{
+  width:100%;
+  min-height:56px;
+  border:0;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  background:linear-gradient(120deg,#ffe7a6,#f9c95b);
+  color:#650910;
+  font-size:20px;
+  font-weight:1000;
+  letter-spacing:.02em;
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.20),
+    0 0 0 1px rgba(255,255,255,.10) inset;
+  transition:transform .16s ease, filter .16s ease;
+}
+.claim-button::after{
+  content:"→";
+  margin-left:10px;
+  font-size:22px;
+}
+.claim-button:hover{filter:brightness(1.03)}
+.claim-button:active{transform:scale(.988)}
+
+.claim-safe{
+  margin-top:12px;
+  text-align:center;
+  color:#ffe1d6;
+  font-size:12px;
+  font-weight:800;
+}
+.claim-safe::before{
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  margin-right:7px;
+  border-radius:50%;
+  background:#22db79;
+  box-shadow:0 0 8px #22db79;
+  vertical-align:middle;
+}
+
+.footer{
+  margin-top:14px;
+  text-align:center;
+  color:#f7c5b8;
+  font-size:11px;
+  line-height:1.6;
+}
+
+@media(max-width:560px){
+  .page{padding:12px 10px 32px}
+  .hero{border-radius:16px}
+  h1{font-size:31px}
+  .info{padding:13px}
+  .row{gap:10px;padding:12px}
+  .label{flex-basis:72px;font-size:12px}
+  .value{font-size:13px}
+  .claim-panel{padding:18px;border-radius:20px}
+  .claim-title .line1,
+  .claim-title .line2{font-size:32px}
+  .claim-button{font-size:18px;min-height:54px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-grid"></div>
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<main class="page">
+
+  <section class="hero">
+    <img id="hero-image" alt="">
+  </section>
+
+  <section class="intro">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <p class="subtitle" id="subtitle"></p>
+  </section>
+
+  <section class="info">
+    <div class="row">
+      <div class="label" id="reward-label"></div>
+      <div class="value" id="reward-text"></div>
+    </div>
+    <div class="row">
+      <div class="label" id="time-label"></div>
+      <div class="value" id="time-text"></div>
+    </div>
+  </section>
+
+  <section class="claim-panel">
+    <div class="claim-tag" id="claim-tag"></div>
+
+    <div class="claim-title">
+      <span class="line1" id="claim-line1"></span>
+      <span class="line2" id="claim-line2"></span>
+    </div>
+
+    <div class="claim-desc" id="claim-desc"></div>
+
+    <div class="claim-button-wrap">
+      <a
+        id="claim-button"
+        class="claim-button"
+        href="#"
+        rel="noopener noreferrer">
+      </a>
+    </div>
+
+    <div class="claim-safe" id="claim-safe"></div>
+  </section>
+
+  <div class="footer" id="footer"></div>
+
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+
+document.title = CONFIG.pageTitle;
+
+$("hero-image").src = CONFIG.heroImage;
+$("hero-image").alt = CONFIG.heroAlt;
+
+$("eyebrow").textContent = CONFIG.eyebrow;
+$("title").textContent = CONFIG.title;
+$("subtitle").textContent = CONFIG.subtitle;
+
+$("reward-label").textContent = CONFIG.rewardLabel;
+$("reward-text").textContent = CONFIG.rewardText;
+
+$("time-label").textContent = CONFIG.timeLabel;
+$("time-text").textContent = CONFIG.timeText;
+
+
+$("claim-tag").textContent = CONFIG.claimTag;
+$("claim-line1").textContent = CONFIG.claimTitleLine1;
+$("claim-line2").textContent = CONFIG.claimTitleLine2;
+$("claim-desc").textContent = CONFIG.claimDesc;
+$("claim-button").textContent = CONFIG.claimButtonText;
+$("claim-button").href = CONFIG.lineLink;
+$("claim-safe").textContent = CONFIG.claimSafeText;
+
+$("footer").textContent = CONFIG.footerText;
+</script>
+
+</body>
+</html>
